@@ -1,0 +1,56 @@
+## .gitignore for .NET WebAPI projects
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Rider / JetBrains
+.idea/
+
+# ASP.NET / WebAPI specific
+wwwroot/lib/
+appsettings.*.json
+launchSettings.json
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Entity Framework
+Migrations/
+
+# Logs & temp
+*.log
+*.tlog
+*.tmp
+*.temp
+
+# Others
+~$*
+*~
+*.dbmdl
+*.bak
+
+# Publish outputs
+[Pp]ublish/

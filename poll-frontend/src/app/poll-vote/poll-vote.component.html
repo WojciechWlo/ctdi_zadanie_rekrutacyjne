@@ -1,0 +1,16 @@
+<div class="container mt-4" *ngIf="poll">
+  <div class="card shadow-sm mx-auto" style="max-width: 600px;">
+    <div class="card-body text-center">
+      <h2 class="card-title mb-3">Poll vote</h2>
+      <h4 class="mb-4">{{ poll.question }}</h4>
+
+      <div *ngFor="let opt of poll.pollOption" class="mb-3">
+        <button 
+          class="btn btn-outline-primary w-100" 
+          (click)="vote(opt.pollOptionID)">
+          {{ opt.text }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

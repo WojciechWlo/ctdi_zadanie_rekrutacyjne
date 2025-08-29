@@ -1,0 +1,35 @@
+<div class="container mt-4">
+  <div class="card shadow-sm mx-auto" style="max-width: 500px;">
+    <div class="card-body">
+      <h2 class="card-title text-center mb-4">Create Poll</h2>
+
+      <form (ngSubmit)="createPoll()" class="d-grid gap-3">
+
+        <div>
+          <label class="form-label">Question</label>
+          <input [(ngModel)]="question" 
+                 name="question" 
+                 class="form-control" 
+                 placeholder="Enter question" 
+                 required>
+        </div>
+
+        <div *ngFor="let opt of options; let i = index; trackBy: trackByIndex">
+          <label class="form-label">Option {{ i + 1 }}</label>
+          <input [(ngModel)]="options[i]" 
+                 name="option{{i}}" 
+                 class="form-control" 
+                 placeholder="Enter option" 
+                 required>
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <button type="button" class="btn btn-outline-primary" (click)="addOption()">+ Add</button>
+          <button type="button" class="btn btn-outline-danger" (click)="removeOption()">- Remove</button>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">Create Poll</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,89 @@
+## Root .gitignore for Angular (poll-frontend) + .NET WebAPI (PollBackend)
+
+# -----------------------
+# Build results (.NET)
+# -----------------------
+**/[Bb]in/
+**/[Oo]bj/
+**/[Ll]og/
+**/[Ll]ogs/
+**/[Dd]ebug/
+**/[Rr]elease/
+**/x64/
+**/x86/
+**/[Aa][Rr][Mm]/
+**/[Aa][Rr][Mm]64/
+
+# -----------------------
+# Visual Studio / Rider / VS Code
+# -----------------------
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# -----------------------
+# ASP.NET / WebAPI specific
+# -----------------------
+PollBackend/wwwroot/lib/
+PollBackend/appsettings.*.json
+PollBackend/launchSettings.json
+
+# NuGet
+*.nupkg
+*.snupkg
+PollBackend/packages/
+project.lock.json
+project.fragment.lock.json
+
+# Entity Framework
+PollBackend/Migrations/
+
+# -----------------------
+# Angular (poll-frontend)
+# -----------------------
+poll-frontend/dist/
+poll-frontend/out-tsc/
+poll-frontend/tmp/
+poll-frontend/coverage/
+poll-frontend/e2e/test-output/
+poll-frontend/.angular/
+poll-frontend/.angular/cache/
+poll-frontend/.angular-cli.json
+poll-frontend/.ng/
+poll-frontend/node_modules/
+poll-frontend/package-lock.json
+poll-frontend/yarn.lock
+
+# -----------------------
+# Environment files
+# -----------------------
+.env
+
+# -----------------------
+# TypeScript cache
+# -----------------------
+*.tsbuildinfo
+
+# -----------------------
+# Logs & temp
+# -----------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.tlog
+*.tmp
+*.temp
+
+# -----------------------
+# Others
+# -----------------------
+~$*
+*~
+*.dbmdl
+*.bak
+[Pp]ublish/
